@@ -81,9 +81,9 @@ class filecrypt implements Callable<Integer>{
 
     public static void main(String[] args) {
 
-       /* String[] chiffrement = {"-enc","-key","179bd8db7241569ad9a29d55e95be3cf","-in","File1.txt","-out","File2.txt"};
+        String[] chiffrement = {"-enc","-key","179bd8db7241569ad9a29d55e95be3cf","-in","File1.txt","-out","File2.txt"};
         new CommandLine(new filecrypt()).execute(chiffrement);
-        System.out.println();*/
+        System.out.println();
         String[] dechiffrement = {"-dec","-key","179bd8db7241569ad9a29d55e95be3cf","-in","File2.txt","-out","File3.txt"};
         new CommandLine(new filecrypt()).execute(dechiffrement);
     }
